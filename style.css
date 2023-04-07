@@ -1,3 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    font-family: 'Anton', sans-serif;
+}
 body{
-    background-color: blue;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #F6F1F1;
+    background-image: url('https://wallpaperaccess.com/full/682419.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.temp-toggle{
+    width: 30px;
+    height: 30px;
+    background-color: #181823;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    align-self: center;
+    color: #F6F1F1;
+    cursor: pointer;
+    user-select:none;
+}
+
+
+.find-bar{
+    width: 24rem;
+    
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3REM;
+    color: #181823;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+}
+
+.find-button{
+    user-select:none;
+   
+    background-color: #181823;
+    color: #F6F1F1;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.find-button:hover,.temp-toggle:hover {
+    background-color: black;
+    color: #19A7CE;
+}
+
+.weather-data{
+    padding: 1rem;
+    background-color: #f6f1f18c;
+    margin-inline:100px;
+    display: flex;
+    gap: 2rem;
+    color: #181823;
+    min-width: 410px;
+    
+}
+.input-div{
+    padding: 1rem;
+    background-color: #f6f1f18c;
+    margin-inline:100px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 410px;
+}
+
+h1.temp{
+    font-size: 5rem;
+}
+
+.secondary-data{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 0.7rem;
+}
+
+.primary-data{
+border-right:  1px  #146C94;
+
+}
+
+.secondary-data *{
+    margin: 0;
+   
+}
+
+.logo{
+    color: #F6F1F1;
+}
+
+.fa-spinner{
+  position: absolute;
+  font-size: 2rem;
+  visibility: hidden;
+ 
+
 }

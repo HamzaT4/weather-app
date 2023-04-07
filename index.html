@@ -6,9 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAO Weather App</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/19d4beac43.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>JAO</h1>
+
+
+
+    <h1 class="logo">JAO</h1>
+
+ 
+    <div class="weather-data">
+        
+        <i class="fa-solid fa-spinner fa-spin"></i> 
+
+        <div class="primary-data">
+            
+            <h2 class="location-name"></h2>
+            <h1 class="temp"> </h1>
+        </div>
+        <div class="secondary-data">
+            <h3 class="wind"></h3>
+            <h3 class="hum"></h3>
+            <h3 class="cond"></h3>
+        </div>
+        
+       
+    </div>
+
+    <div class="input-div">
+        <input type="search" class="find-bar" placeholder="Enter city or country...">
+        <button class="find-button">Find</button>
+
+        <div class="temp-toggle">
+            <p>°F</p>
+        </div>
+    </div>
+ 
+
 </body>
 </html>
